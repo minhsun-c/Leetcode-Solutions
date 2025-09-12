@@ -59,17 +59,7 @@ void merge(struct ListNode *l1, struct ListNode *l2) {
     }
 }
 
-void trav(struct ListNode *h) {
-    while (h) {
-        printf("%d -> ", h -> val);
-        h = h -> next;
-    }
-    printf("NULL\n");
-}
-
 void reorderList(struct ListNode* head) {
     struct ListNode *head2 = reverse(getmid(head));
-    trav(head);
-    trav(head2);
     merge(head, head2);
 }
