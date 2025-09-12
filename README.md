@@ -172,4 +172,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0112-path-sum) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1544-count-good-nodes-in-binary-tree) |
+## Design
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
+## Queue
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
+## Data Stream
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
 <!---LeetCode Topics End-->
