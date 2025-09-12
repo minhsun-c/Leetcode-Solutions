@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0643-maximum-average-subarray-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0643-maximum-average-subarray-i) |
+| [0724-find-pivot-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 ## Hash Table
@@ -203,5 +204,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0724-find-pivot-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 <!---LeetCode Topics End-->
