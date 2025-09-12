@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0141-linked-list-cycle](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0147-insertion-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0147-insertion-sort-list) |
+| [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0206-reverse-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Two Pointers
@@ -26,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0086-partition-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0086-partition-list) |
 | [0088-merge-sorted-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
+| [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 | [0443-string-compression](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
@@ -86,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -94,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 ## String Matching
 |  |
 | ------- |
@@ -103,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0088-merge-sorted-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0147-insertion-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0147-insertion-sort-list) |
+| [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 ## Tree
 |  |
 | ------- |
