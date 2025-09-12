@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0027-remove-element) |
+| [0053-maximum-subarray](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
 ## Hash Table
 |  |
 | ------- |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0005-longest-palindromic-substring) |
+| [0053-maximum-subarray](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
 ## Trie
 |  |
 | ------- |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
