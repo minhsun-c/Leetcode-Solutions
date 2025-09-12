@@ -182,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0098-validate-binary-search-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0374-guess-number-higher-or-lower](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0783-search-in-a-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0783-search-in-a-binary-search-tree) |
 ## Breadth-First Search
 |  |
@@ -214,4 +215,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0724-find-pivot-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
