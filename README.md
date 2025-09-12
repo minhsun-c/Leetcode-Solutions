@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0643-maximum-average-subarray-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 ## Hash Table
 |  |
 | ------- |
@@ -199,4 +200,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+## Prefix Sum
+|  |
+| ------- |
+| [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 <!---LeetCode Topics End-->
