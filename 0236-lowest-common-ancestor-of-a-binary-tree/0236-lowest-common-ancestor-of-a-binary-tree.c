@@ -7,18 +7,13 @@
  * };
  */
 
-bool find(struct TreeNode* root, struct TreeNode* p) {
-    if (!root) return false;
-    if (root -> val == p -> val) return true;
-    return find(root -> left, p) || find(root -> right, p);
-}
-
 struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
-    if (root -> val == p-> val || root -> val == q -> val)
+    if (!root || root == p || root == q)
         return root;
-    int left = find(root -> left, p) || find(root -> left, q);
-    int right = find(root -> right, p) || find(root -> right, q);
+    struct TreeNode *left = lowestCommonAncestor(root -> left, p, q);
+    struct TreeNode *right = lowestCommonAncestor(root -> right, p, q);
+    
     if (left && right) return root;
-    else if (left) return lowestCommonAncestor(root -> left, p, q);
-    else return lowestCommonAncestor(root -> right, p, q);
+    else if (left) return left;
+    else return right;
 }
