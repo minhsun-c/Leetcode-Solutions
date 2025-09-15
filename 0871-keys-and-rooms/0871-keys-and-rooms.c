@@ -2,7 +2,6 @@ int locks[1000];
 int count;
 
 bool rec(int **rooms, int* roomsColSize, int cur) {
-    printf("cur: %d\n", cur);
     if (locks[cur]) return false;
     locks[cur] = 1;
     count ++;
