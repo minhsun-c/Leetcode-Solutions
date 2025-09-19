@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [0908-middle-of-the-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0908-middle-of-the-linked-list) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1894-merge-strings-alternately) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
@@ -106,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-min-cost-climbing-stairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0747-min-cost-climbing-stairs) |
 | [1036-rotting-oranges](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1036-rotting-oranges) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Hash Table
@@ -116,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Math
 |  |
 | ------- |
@@ -180,6 +183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0147-insertion-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0147-insertion-sort-list) |
 | [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Tree
 |  |
 | ------- |
