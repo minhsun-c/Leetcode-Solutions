@@ -19,7 +19,6 @@ int* searchRange(int* nums, int numsSize, int target, int* returnSize) {
     int *arr = (int *)malloc(sizeof(int) * 2);
     int find = bs(nums, numsSize, target);
     arr[0] = arr[1] = find;
-    printf("%d\n", find);
     if (find == -1) return arr;
     
     for (; arr[0]>=0 && nums[arr[0]] == target; arr[0]--);
