@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1894-merge-strings-alternately) |
 | [2470-removing-stars-from-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2470-removing-stars-from-a-string) |
+| [3379-score-of-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3379-score-of-a-string) |
 ## Array
 |  |
 | ------- |
