@@ -127,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2048-build-array-from-permutation](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2048-build-array-from-permutation) |
+| [3242-count-elements-with-maximum-frequency](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 ## Hash Table
 |  |
 | ------- |
@@ -138,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
+| [3242-count-elements-with-maximum-frequency](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 ## Math
 |  |
 | ------- |
@@ -377,4 +379,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0062-unique-paths) |
+## Counting
+|  |
+| ------- |
+| [3242-count-elements-with-maximum-frequency](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 <!---LeetCode Topics End-->
