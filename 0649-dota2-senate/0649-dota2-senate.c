@@ -19,7 +19,8 @@ int pop(queue_t *obj) {
 }
 
 char* predictPartyVictory(char* senate) {
-    memset(queue, 0, sizeof(queue));
+    queue[0].front = queue[0].end = queue[0].size = 0;
+    queue[1].front = queue[1].end = queue[1].size = 0;
     int len = strlen(senate);
     for (int i=0; i<len; i++) {
         if (senate[i] == 'D') push(queue, i);
