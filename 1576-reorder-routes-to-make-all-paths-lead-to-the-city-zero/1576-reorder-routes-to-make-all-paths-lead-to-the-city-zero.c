@@ -42,10 +42,9 @@ int dfs(int idx) {
     for (int i=0; i<infos[idx].used; i++) {
         target = infos[idx].link[i];
         node = GETNODE(target);
-        if (ISREAL(target)) {
-            count += dfs(node);
-        } else {
-            count += !infos[node].visited;
+        if (!infos[node].visited) {
+            if (!ISREAL(target))
+                count ++;
             count += dfs(node);
         }
     }
