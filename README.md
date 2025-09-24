@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0136-single-number) |
 | [0162-find-peak-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0162-find-peak-element) |
 | [0198-house-robber](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0198-house-robber) |
+| [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0216-combination-sum-iii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0216-combination-sum-iii) |
 | [0238-product-of-array-except-self](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
@@ -193,10 +194,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
 | [0190-reverse-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0190-reverse-bits) |
+| [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0023-merge-k-sorted-lists) |
+| [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 ## Merge Sort
 |  |
 | ------- |
@@ -214,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0088-merge-sorted-array) |
 | [0147-insertion-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0147-insertion-sort-list) |
 | [0148-sort-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0148-sort-list) |
+| [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Tree
 |  |
@@ -388,4 +392,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3242-count-elements-with-maximum-frequency](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3242-count-elements-with-maximum-frequency) |
+## Quickselect
+|  |
+| ------- |
+| [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 <!---LeetCode Topics End-->
