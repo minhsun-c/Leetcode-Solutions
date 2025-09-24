@@ -38,14 +38,15 @@ void add_link(int **connections, int connectionsSize) {
 int dfs(int idx) {
     if (infos[idx].visited) return 0;
     infos[idx].visited = 1;
-    int count = 0, target;
+    int count = 0, target, node;
     for (int i=0; i<infos[idx].used; i++) {
         target = infos[idx].link[i];
+        node = GETNODE(target);
         if (ISREAL(target)) {
-            count += dfs(GETNODE(target));
+            count += dfs(node);
         } else {
-            count += !infos[GETNODE(target)].visited;
-            count += dfs(GETNODE(target));
+            count += !infos[node].visited;
+            count += dfs(node);
         }
     }
     return count;
