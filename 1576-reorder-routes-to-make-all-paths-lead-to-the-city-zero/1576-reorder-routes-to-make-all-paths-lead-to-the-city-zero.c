@@ -1,60 +1,57 @@
-#define GETNODE(x) ((x) & 0x7fffffff)
-#define REAL(x) ((x) | 0x80000000)
-#define ISREAL(x) (!!((x) & 0x80000000))
+#include <stdlib.h>
 
-typedef struct {
-    uint32_t link[50000];
-    int used;
-    int visited;
-} info_t;
+typedef struct Edge {
+    int to;
+    unsigned char cost;  // 1 if original edge is u->v (needs flip when going away from 0), else 0
+    int next;
+} Edge;
 
-info_t *infos;
-int size;
+static Edge *E;
+static int *head;
+static unsigned char *vis;
+static int ei;
 
-void create_map(int n) {
-    infos = (info_t *)malloc(sizeof(info_t) * n);
-    size = n;
-    for (int i=0; i<n; i++) {
-        infos[i].used = 0;
-        infos[i].visited = 0;
-    }
+static void add_edge(int u, int v, int c) {
+    E[ei].to = v;
+    E[ei].cost = (unsigned char)c;
+    E[ei].next = head[u];
+    head[u] = ei++;
 }
 
-void free_map() {
-    free(infos);
-}
-
-void add_link(int **connections, int connectionsSize) {
-    for (int i=0; i<connectionsSize; i++) {
-        int from = connections[i][0];
-        int to = connections[i][1];
-        int idx1 = infos[from].used ++;
-        int idx2 = infos[to].used ++;
-        infos[from].link[idx1] = to;
-        infos[to].link[idx2] = REAL(from);
-    }
-}
-
-int dfs(int idx) {
-    if (infos[idx].visited) return 0;
-    infos[idx].visited = 1;
-    int count = 0, target, node;
-    for (int i=0; i<infos[idx].used; i++) {
-        target = infos[idx].link[i];
-        node = GETNODE(target);
-        if (!infos[node].visited) {
-            if (!ISREAL(target))
-                count ++;
-            count += dfs(node);
+static int dfs(int u) {
+    vis[u] = 1;
+    int ans = 0;
+    for (int e = head[u]; e != -1; e = E[e].next) {
+        int v = E[e].to;
+        if (!vis[v]) {
+            ans += E[e].cost;   // count flip if original direction was u->v
+            ans += dfs(v);
         }
     }
-    return count;
+    return ans;
 }
 
 int minReorder(int n, int **connections, int connectionsSize, int *connectionsColSize) {
-    create_map(n);
-    add_link(connections, connectionsSize);
-    int ret = dfs(0);
-    free_map();
-    return ret;
+    int m = connectionsSize;
+
+    E = (Edge *)malloc(sizeof(Edge) * (2 * m));
+    head = (int *)malloc(sizeof(int) * n);
+    vis = (unsigned char *)calloc(n, sizeof(unsigned char));
+    ei = 0;
+    for (int i = 0; i < n; i++) head[i] = -1;
+
+    // For edge a->b, store (a->b,1) and (b->a,0)
+    for (int i = 0; i < m; i++) {
+        int a = connections[i][0];
+        int b = connections[i][1];
+        add_edge(a, b, 1);
+        add_edge(b, a, 0);
+    }
+
+    int ans = dfs(0);
+
+    free(E);
+    free(head);
+    free(vis);
+    return ans;
 }
