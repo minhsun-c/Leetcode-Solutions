@@ -8,10 +8,9 @@ typedef struct {
     int size;
 } SmallestInfiniteSet;
 
-void swap(SmallestInfiniteSet *obj, int idx1, int idx2) {
-    obj->heap[idx1] = obj->heap[idx1] ^ obj->heap[idx2];
-    obj->heap[idx2] = obj->heap[idx1] ^ obj->heap[idx2];
-    obj->heap[idx1] = obj->heap[idx1] ^ obj->heap[idx2];
+static inline void swap(SmallestInfiniteSet *obj, int i, int j) {
+    if (i == j) return;
+    int t = obj->heap[i]; obj->heap[i] = obj->heap[j]; obj->heap[j] = t;
 }
 
 void heapifyDown(SmallestInfiniteSet *obj) {
