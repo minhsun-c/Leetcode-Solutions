@@ -67,7 +67,6 @@ int smallestInfiniteSetPopSmallest(SmallestInfiniteSet* obj) {
 
 void smallestInfiniteSetAddBack(SmallestInfiniteSet* obj, int num) {
     if (obj->exist[num]) return;
-    printf("Add back: %d\n", num);
     obj->heap[obj->size] = num;
     obj->exist[num] = 1;
     obj->size ++;
