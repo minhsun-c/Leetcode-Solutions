@@ -1,5 +1,5 @@
 #define PARENT(n)   (((n)-1) >> 1)
-#define LEFT(n)     ((((n) + 1) << 1) - 1)
+#define LEFT(n)     (((n) << 1) + 1)
 #define RIGHT(n)    (((n) + 1) << 1)
 
 typedef struct {
