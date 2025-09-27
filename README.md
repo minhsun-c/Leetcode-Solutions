@@ -191,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0143-reorder-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0143-reorder-list) |
 | [0234-palindrome-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0739-daily-temperatures](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0739-daily-temperatures) |
+| [0937-online-stock-span](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0937-online-stock-span) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2470-removing-stars-from-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2470-removing-stars-from-a-string) |
 ## Divide and Conquer
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0838-design-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0838-design-linked-list) |
+| [0937-online-stock-span](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
 | [2413-smallest-number-in-infinite-set](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
@@ -330,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Data Stream
 |  |
 | ------- |
+| [0937-online-stock-span](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
 ## Sliding Window
 |  |
@@ -420,4 +423,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0739-daily-temperatures) |
+| [0937-online-stock-span](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0937-online-stock-span) |
 <!---LeetCode Topics End-->
