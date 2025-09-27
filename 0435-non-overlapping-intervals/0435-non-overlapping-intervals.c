@@ -1,8 +1,9 @@
 static int cmp(const void *a, const void *b) {
-    const int *_a = *(const int * const *)a;
-    const int *_b = *(const int * const *)b;
+    const int *A = *(const int * const *)a;
+    const int *B = *(const int * const *)b;
 
-    return (_a[1] != _b[1]) ? _a[1] - _b[1] : _a[0] - _b[0];
+    if (A[1] != B[1]) return (A[1] > B[1]) - (A[1] < B[1]); // avoid subtraction overflow
+    return (A[0] > B[0]) - (A[0] < B[0]);
 }
 
 int eraseOverlapIntervals(int** intervals, int intervalsSize, int* intervalsColSize) {
