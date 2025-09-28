@@ -139,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1392-find-the-difference-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -158,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [1319-unique-number-of-occurrences](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
 | [1777-determine-if-two-strings-are-close](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2413-smallest-number-in-infinite-set](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2413-smallest-number-in-infinite-set) |
@@ -176,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0070-climbing-stairs) |
 | [0089-gray-code](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0089-gray-code) |
 | [1236-n-th-tribonacci-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1236-n-th-tribonacci-number) |
+| [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
 | [2383-add-two-integers](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2383-add-two-integers) |
 | [2491-smallest-even-multiple](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2491-smallest-even-multiple) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
@@ -442,6 +445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
 | [1777-determine-if-two-strings-are-close](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1777-determine-if-two-strings-are-close) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
