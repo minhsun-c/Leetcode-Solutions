@@ -1,118 +1,65 @@
-typedef struct {
-    int to;
-    double w;
-} Edge;
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+double graph[40][40];
+char op_list[40][10];
+int op_used;
 
-typedef struct {
-    Edge *edges;
-    int n, cap;
-} Adj;
-
-// ----- simple string -> id map (linear search; fine for typical constraints) -----
-static const char **names = NULL;
-static int names_n = 0;
-static int names_cap = 0;
-
-static int find_id(const char *s) {
-    for (int i = 0; i < names_n; ++i) {
-        if (strcmp(names[i], s) == 0) return i;
+static int getid(char *str, int op) {
+    for (int i=0; i<op_used; i++)
+        if (strcmp(op_list[i], str) == 0)
+            return i;
+    if (!op) {
+        strcpy(op_list[op_used], str);
+        op_used ++;
+        return op_used - 1;
     }
     return -1;
 }
 
-static int get_or_add_id(const char *s) {
-    int id = find_id(s);
-    if (id >= 0) return id;
-    if (names_n == names_cap) {
-        names_cap = names_cap ? names_cap * 2 : 32;
-        names = (const char **)realloc(names, names_cap * sizeof(*names));
-    }
-    names[names_n] = s; // safe to store pointer to input string during call
-    return names_n++;
+static void add_edge(int i, int j, double val) {
+    graph[i][j] = val;
+    graph[j][i] = 1.0 / val;
 }
 
-// ----- adjacency list helpers -----
-static void add_edge(Adj *G, int u, int v, double w) {
-    if (G[u].n == G[u].cap) {
-        G[u].cap = G[u].cap ? G[u].cap * 2 : 4;
-        G[u].edges = (Edge *)realloc(G[u].edges, G[u].cap * sizeof(Edge));
-    }
-    G[u].edges[G[u].n++] = (Edge){ .to = v, .w = w };
-}
+static double dfs_util(int u, int target, double acc, int *seen) {
+    if (u == target) return acc;
+    seen[u] = 1;
 
-static double dfs_eval(Adj *G, int u, int target, int *vis, double acc, int *found) {
-    if (u == target) { *found = 1; return acc; }
-    vis[u] = 1;
-    for (int i = 0; i < G[u].n; ++i) {
-        int v = G[u].edges[i].to;
-        if (!vis[v]) {
-            double res = dfs_eval(G, v, target, vis, acc * G[u].edges[i].w, found);
-            if (*found) return res;
+    for (int v = 0; v < op_used; ++v) {
+        double w = graph[u][v];
+        if (w != 0.0 && !seen[v]) {
+            double res = dfs_util(v, target, acc * w, seen);
+            if (res != -1.0) return res;
         }
     }
     return -1.0;
 }
 
-double* calcEquation(char*** equations, int equationsSize, int* equationsColSize,
-                     double* values, int valuesSize,
-                     char*** queries, int queriesSize, int* queriesColSize,
-                     int* returnSize) {
+double dfs(int start, int end) {
+    if (start == end) return 1.0; 
+    int seen[40] = {0};
+    return dfs_util(start, end, 1.0, seen);
+}
 
-    (void)equationsColSize; (void)queriesColSize; // unused (always 2)
+double* calcEquation(char*** equations, int equationsSize, int* equationsColSize, double* values, int valuesSize, char*** queries, int queriesSize, int* queriesColSize, int* returnSize) {
+    op_used = 0;
+    memset(graph, 0, sizeof(graph));
     *returnSize = queriesSize;
+    double *ret = (double *)malloc(sizeof(double) * queriesSize);
 
-    // reset global map for each call
-    names_n = 0;
-    names_cap = 0;
-    free(names);
-    names = NULL;
-
-    // 1) Map variables to ids
-    for (int i = 0; i < equationsSize; ++i) {
-        int a = get_or_add_id(equations[i][0]);
-        int b = get_or_add_id(equations[i][1]);
-        (void)a; (void)b;
-    }
-    int N = names_n;
-
-    // 2) Build graph
-    Adj *G = (Adj *)calloc(N, sizeof(Adj));
-    for (int i = 0; i < equationsSize; ++i) {
-        int a = find_id(equations[i][0]);
-        int b = find_id(equations[i][1]);
-        double k = values[i];
-        add_edge(G, a, b, k);
-        add_edge(G, b, a, 1.0 / k);
+    for (int i=0; i<equationsSize; i++) {
+        int id1 = getid(equations[i][0], 0);
+        int id2 = getid(equations[i][1], 0);
+        add_edge(id1, id2, values[i]);
     }
 
-    // 3) Answer queries
-    double *ans = (double *)malloc(sizeof(double) * queriesSize);
-    int *vis = (int *)malloc(sizeof(int) * N);
-
-    for (int q = 0; q < queriesSize; ++q) {
-        const char *C = queries[q][0];
-        const char *D = queries[q][1];
-        int u = find_id(C);
-        int v = find_id(D);
-
-        if (u < 0 || v < 0) {
-            ans[q] = -1.0;                 // unknown variable
-        } else if (u == v) {
-            ans[q] = 1.0;                  // x/x = 1.0 (if x exists)
-        } else {
-            memset(vis, 0, sizeof(int) * N);
-            int found = 0;
-            ans[q] = dfs_eval(G, u, v, vis, 1.0, &found);
-            if (!found) ans[q] = -1.0;
-        }
+    for (int i=0; i<queriesSize; i++) {
+        int id1 = getid(queries[i][0], 1);
+        int id2 = getid(queries[i][1], 1);
+        if (id1 == -1 || id2 == -1) ret[i] = -1.0;
+        else ret[i] = dfs(id1, id2);
     }
 
-    // 4) Cleanup (graph)
-    for (int i = 0; i < N; ++i) free(G[i].edges);
-    free(G);
-    free(vis);
-
-    // Note: we don't free `names` here because the judge may call this once.
-    // If you embed this in your own program, free(names) when done.
-    return ans;
+    return ret;
 }
