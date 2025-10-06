@@ -1,13 +1,12 @@
-int cmp(const void *a, const void *b) {
-    return *(int *)a - *(int *)b;
-}
-
 int majorityElement(int* nums, int numsSize) {
-    qsort(nums, numsSize, sizeof(int), cmp);
-    int half = (numsSize - 1) / 2;
-    for (int i=0; i<=half; i++) {
-        if (i + half >= numsSize) return -1;
-        else if (nums[i] == nums[i+half]) return nums[i];
+    int major = nums[0], count = 1;
+    for (int i=1; i<numsSize; i++) {
+        if (count == 0) {
+            major = nums[i];
+            count = 1;
+        } 
+        else if (major == nums[i]) count ++;
+        else count --;
     }
-    return -1;
+    return major;
 }
