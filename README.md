@@ -132,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0216-combination-sum-iii) |
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -172,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [1319-unique-number-of-occurrences](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
@@ -192,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0070-climbing-stairs) |
 | [0089-gray-code](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0089-gray-code) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [1236-n-th-tribonacci-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1236-n-th-tribonacci-number) |
 | [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
 | [2383-add-two-integers](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2383-add-two-integers) |
@@ -278,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [1777-determine-if-two-strings-are-close](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1777-determine-if-two-strings-are-close) |
@@ -355,6 +359,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0098-validate-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0098-validate-binary-search-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0162-find-peak-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0162-find-peak-element) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0374-guess-number-higher-or-lower](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0450-delete-node-in-a-bst](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0501-find-mode-in-binary-search-tree) |
@@ -443,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0089-gray-code](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0089-gray-code) |
 | [0136-single-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0190-reverse-bits) |
+| [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0338-counting-bits) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2323-minimum-bit-flips-to-convert-number) |
