@@ -152,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0284-peeking-iterator](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0284-peeking-iterator) |
 | [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
+| [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -493,6 +494,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0200-number-of-islands](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0200-number-of-islands) |
 | [0240-search-a-2d-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
 | [1036-rotting-oranges](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2428-equal-row-and-column-pairs) |
@@ -514,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0059-spiral-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0059-spiral-matrix-ii) |
 | [0067-add-binary](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0067-add-binary) |
+| [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
 | [0735-asteroid-collision](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0735-asteroid-collision) |
 | [2048-build-array-from-permutation](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2048-build-array-from-permutation) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
