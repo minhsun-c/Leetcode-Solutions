@@ -1,18 +1,24 @@
 typedef struct {
-    int *arr;
+    int *pf;
+    int cap;
 } NumArray;
 
 
 NumArray* numArrayCreate(int* nums, int numsSize) {
     NumArray *obj = (NumArray *)malloc(sizeof(NumArray));
-    obj->arr = nums;
+    obj->cap = numsSize;
+    obj->pf = (int *)malloc(sizeof(int) * numsSize);
+    obj->pf[0] = 0;
+    for (int i=0; i<numsSize; i++) obj->pf[0] += nums[i];
+    for (int i=1; i<numsSize; i++) obj->pf[i] = obj->pf[i-1] - nums[i-1];
     return obj;
 }
 
 int numArraySumRange(NumArray* obj, int left, int right) {
-    int cnt = 0;
-    for (int i=left; i<=right; i++) cnt += obj->arr[i];
-    return cnt;
+    int r;
+    if (right == obj->cap-1) r = 0;
+    else r = obj->pf[right+1];
+    return obj->pf[left] - r;
 }
 
 void numArrayFree(NumArray* obj) {
