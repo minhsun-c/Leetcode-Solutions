@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
+| [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0345-reverse-vowels-of-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0443-string-compression) |
@@ -149,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0240-search-a-2d-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -401,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0240-search-a-2d-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0374-guess-number-higher-or-lower](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0450-delete-node-in-a-bst](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0501-find-mode-in-binary-search-tree) |
@@ -499,6 +502,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0190-reverse-bits) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0338-counting-bits) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2323-minimum-bit-flips-to-convert-number) |
