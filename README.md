@@ -153,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0284-peeking-iterator](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0284-peeking-iterator) |
 | [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
+| [0303-range-sum-query-immutable](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0303-range-sum-query-immutable) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -436,6 +437,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0284-peeking-iterator](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0284-peeking-iterator) |
+| [0303-range-sum-query-immutable](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0303-range-sum-query-immutable) |
 | [0838-design-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0838-design-linked-list) |
 | [0937-online-stock-span](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0969-number-of-recent-calls) |
@@ -462,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
+| [0303-range-sum-query-immutable](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0303-range-sum-query-immutable) |
 | [0724-find-pivot-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0724-find-pivot-index) |
 | [1046-max-consecutive-ones-iii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1046-max-consecutive-ones-iii) |
 | [1603-running-sum-of-1d-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1603-running-sum-of-1d-array) |
