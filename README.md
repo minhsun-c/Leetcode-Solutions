@@ -238,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3567-convert-date-to-binary](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3567-convert-date-to-binary) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3830-find-closest-person](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3830-find-closest-person) |
 ## Dynamic Programming
 |  |
@@ -516,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0338-counting-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0338-counting-bits) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2323-minimum-bit-flips-to-convert-number) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Simulation
 |  |
 | ------- |
