@@ -1,42 +1,70 @@
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
+#include <stdlib.h>
+#include <string.h>
 
-typedef struct {int idx; int n;} pair;
-pair cnt[50];
-int cmp(const void *a, const void *b) { 
-    int ndiff = ((pair*) b)->n - ((pair *) a)->n; 
-    if (ndiff) return ndiff;
-    else return ((pair*) b)->idx - ((pair *) a)->idx; 
-}
+static inline int calc_xsum_bucketed(const int *freq, int k, int x, int window_sum, int distinct) {
+    if (distinct <= x) return window_sum;            // big win on many cases
 
-int calc(int x)
-{
-    pair arr[50];
-    memcpy(arr, cnt, sizeof(cnt));
-    qsort(arr, 50, sizeof(pair), cmp);
+    // Bucket by frequency (1..k); values are in [1..50].
+    // buckets[f][*] holds values with frequency f, stored in descending value order.
+    int buckets[51][51];       // [freq][index] -> value
+    int bsz[51] = {0};
 
-    int sum = 0;
-    if (arr[x-1].n == 0) {
-        for (int i=0; i<50; i++) sum += cnt[i].idx * cnt[i].n;
-    } else {
-        for (int i=0; i<x; i++) sum += arr[i].idx * arr[i].n;
+    for (int v = 50; v >= 1; --v) {
+        int f = freq[v];
+        if (f > 0) {
+            if (f > k) f = k;  // freq cannot exceed k but guard anyway
+            buckets[f][bsz[f]++] = v;  // pushing in descending v
+        }
     }
-    return sum;
+
+    int taken = 0;
+    long long sum = 0;
+    for (int f = k; f >= 1 && taken < x; --f) {
+        for (int i = 0; i < bsz[f] && taken < x; ++i) {
+            int v = buckets[f][i];     // values already in descending order
+            sum += (long long)v * f;   // keep all occurrences of this value
+            ++taken;                   // count one distinct element
+        }
+    }
+    return (int)sum;
 }
 
 int* findXSum(int* nums, int numsSize, int k, int x, int* returnSize) {
     *returnSize = numsSize - k + 1;
-    int *ret = (int *)malloc(sizeof(int) * *returnSize);
-    
-    for (int i=0; i<50; i++) cnt[i] = (pair){i+1, 0};
-    for (int i=0; i<k; i++) cnt[nums[i]-1].n ++;
-    for (int i=k-1; i<numsSize; i++) {
-        ret[i-k+1] = calc(x);
-        if (i<numsSize-1) {
-            cnt[nums[i-k+1]-1].n --;
-            cnt[nums[i+1]-1].n ++;
+    int *ret = (int *)malloc(sizeof(int) * (*returnSize));
+    if (!ret) return NULL;
+
+    // freq[v] for v in [1..50]
+    int freq[51] = {0};
+
+    int window_sum = 0;
+    int distinct = 0;
+
+    // initialize first window [0..k-1]
+    for (int i = 0; i < k; ++i) {
+        int v = nums[i];                // 1..50
+        window_sum += v;
+        if (freq[v]++ == 0) ++distinct;
+    }
+
+    // process all windows
+    for (int i = 0; i < *returnSize; ++i) {
+        ret[i] = calc_xsum_bucketed(freq, k, x, window_sum, distinct);
+
+        // slide window: remove nums[i], add nums[i+k]
+        if (i + k < numsSize) {
+            int out = nums[i];
+            int in  = nums[i + k];
+
+            // remove out
+            window_sum -= out;
+            if (--freq[out] == 0) --distinct;
+
+            // add in
+            window_sum += in;
+            if (freq[in]++ == 0) ++distinct;
         }
     }
+
     return ret;
 }
