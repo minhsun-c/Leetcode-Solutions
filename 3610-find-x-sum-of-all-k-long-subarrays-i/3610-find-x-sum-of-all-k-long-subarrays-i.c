@@ -15,20 +15,13 @@ int calc(int x)
     pair arr[50];
     memcpy(arr, cnt, sizeof(cnt));
     qsort(arr, 50, sizeof(pair), cmp);
-    printf("\ncnt: ");
-    for (int i=0; i<50; i++) printf("[%d, %d] ", cnt[i].idx, cnt[i].n);
-    printf("\narr: ");
-    for (int i=0; i<50; i++) printf("[%d, %d] ", arr[i].idx, arr[i].n);
 
     int sum = 0;
     if (arr[x-1].n == 0) {
         for (int i=0; i<50; i++) sum += cnt[i].idx * cnt[i].n;
-        printf("\nsum1: %d\n", sum);
     } else {
         for (int i=0; i<x; i++) sum += arr[i].idx * arr[i].n;
-        printf("\nsum2: %d\n", sum);
     }
-    printf("\n");
     return sum;
 }
 
