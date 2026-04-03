@@ -1,90 +1,57 @@
-char sum[500];
-char temp[500];
-int l1, l2;
-void strip(char *arr) {
-    if (arr[0] == '0' && arr[1] == 0) return;
-    int z = 0, i;
-    for (int i=0; arr[i]; i++) {
-        if (arr[i] == '0') z++;
-        else break;
-    }
-    
-    if (z) {
-        for (i=z; arr[i]; i++) 
-            arr[i-z] = arr[i];
-        arr[i-z] = 0;
+static void reverse(char *s, int len) {
+    for (int i = 0; i < len / 2; i++) {
+        char t = s[i]; s[i] = s[len-i-1]; s[len-i-1] = t;
     }
 }
 
-void azero(char *arr, int z) {
-    int len = strlen(arr);
-    for (int i=0; i<z; i++) arr[len + i] = '0';
-    arr[len + z] = 0;
-} 
-
-void reverse(char *arr) {
-    int len = strlen(arr);
-    for (int i=0; i<len/2; i++) {
-        char t = arr[i]; 
-        arr[i] = arr[len-i-1]; 
-        arr[len-i-1] = t;
-    }
-}
-
-void mul(char *num1, char dig) {
-    int carry = 0;
-    int s = 0;
-    for (int i=l1-1; i>=0; i--) {
-        printf("[i=%d] %d x %d\n", i, num1[i] - '0', dig - '0');
-        s = carry + (num1[i] - '0') * (dig - '0');
+static void add_into(char *dst, const char *src) {
+    int i = strlen(dst) - 1;
+    int j = strlen(src) - 1;
+    int carry = 0, k = 0;
+    char acc[1000];
+    while (i >= 0 || j >= 0 || carry) {
+        int s = carry;
+        if (i >= 0) s += dst[i--] - '0';
+        if (j >= 0) s += src[j--] - '0';
         carry = s / 10;
-        s = s % 10;
-        temp[i+1] = '0' + s;
-        printf("s = %d\n", s);
+        acc[k++] = '0' + s % 10;
     }
-    temp[0] = carry + '0';
-    temp[l1 + 1] = 0;
-    printf("temp: %s [%d] [%d]\n", temp, strlen(temp), l1);
+    acc[k] = '\0';
+    reverse(acc, k);
+    strcpy(dst, acc);
 }
 
-void add() {
-    printf("%s + %s ", temp, sum);
-    char acc[500];
-    reverse(temp);
-    reverse(sum);
-    int s = 0, c = 0;
-    int tv = 1, sv = 1;
-    
-    int i;
-    for (i=0; tv || sv; i++) {
-        s = c;
-        if (!temp[i] || tv == 0) tv = 0;
-        else s += (temp[i] - '0');
-        if (!sum[i] || sv == 0) sv = 0;
-        else s += (sum[i] - '0');
-        c = s / 10;
-        s %= 10;
-        acc[i] = s + '0';
-    }
-    acc[i] = 0;
-    reverse(acc);
-    strip(acc);
-    strncpy(sum, acc, 500);
-    printf("= %s\n", sum);
-}
+char *multiply(char *num1, char *num2) {
+    static char result[1000];
+    static char temp[1000];
+    int l1 = strlen(num1), l2 = strlen(num2);
 
-char* multiply(char* num1, char* num2) {
-    l1 = strlen(num1);
-    l2 = strlen(num2);
-    if (num1[0] == '0' && l1 == 1) return num1;
-    if (num2[0] == '0' && l2 == 1) return num2;
-    sum[0] = '0'; sum[1] = '\0';
-    for (int i=l2-1; i>=0; i--) {
-        printf("%c\n", num2[i]);
-        mul(num1, num2[i]);
-        azero(temp, l2-1-i);
-        add();
+    if ((l1==1 && num1[0]=='0') || (l2==1 && num2[0]=='0')) {
+        result[0]='0'; result[1]='\0'; return result;
     }
-    return sum;
 
+    result[0] = '0'; result[1] = '\0';
+
+    for (int i = l2 - 1; i >= 0; i--) {
+        int d = num2[i] - '0';
+        if (d == 0) continue;
+
+        int zeros = l2 - 1 - i;
+        int carry = 0, pos = 0;
+
+        for (int j = l1 - 1; j >= 0; j--) {
+            int s = carry + (num1[j] - '0') * d;
+            carry = s / 10;
+            temp[pos++] = '0' + s % 10;
+        }
+        if (carry) temp[pos++] = '0' + carry;
+
+        reverse(temp, pos);
+
+        for (int z = 0; z < zeros; z++) temp[pos++] = '0';
+        temp[pos] = '\0';
+
+        add_into(result, temp);
+    }
+    return result;
 }
