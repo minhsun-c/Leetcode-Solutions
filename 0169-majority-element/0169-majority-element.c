@@ -1,12 +1,13 @@
 int majorityElement(int* nums, int numsSize) {
-    int major = nums[0], count = 1;
-    for (int i=1; i<numsSize; i++) {
-        if (count == 0) {
-            major = nums[i];
-            count = 1;
-        } 
-        else if (major == nums[i]) count ++;
-        else count --;
+    int maj, cnt = 0;
+    // if cnt == 0, maj = nums[i]
+
+    for (int i=0; i<numsSize; i++) {
+        if (cnt == 0) {
+            maj = nums[i];
+            cnt ++;
+        } else if (nums[i] != maj) cnt --;
+        else cnt ++;
     }
-    return major;
+    return maj;
 }
