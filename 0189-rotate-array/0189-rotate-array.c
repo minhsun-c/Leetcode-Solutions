@@ -1,19 +1,23 @@
 void rotate(int* nums, int numsSize, int k) {
-    if (k == 0) return;
     k = k % numsSize;
-    int last = 0;
-    int idx = 0;
+    if (!k) return;
+
+    int cnt = 0;
+    int start = 0;
+    int cur_id = 0, nx_id;
     int prev = nums[0], next;
-    for (int i=0; i<numsSize; i++) {
-        int n_id = (idx + k) % numsSize;
-        next = nums[n_id];
-        nums[n_id] = prev;
+    while (1) {
+        nx_id = (cur_id + k) % numsSize;
+        next = nums[nx_id];
+        nums[nx_id] = prev;
         prev = next;
-        idx = n_id;
-        if (idx == last && idx < k - 1) {
-            last ++;
-            idx ++;
-            prev = nums[idx];
+        cur_id = nx_id;
+        cnt ++;
+        if (cnt == numsSize) return;
+        if (cur_id == start) {
+            cur_id = start + 1;
+            start ++;
+            prev = nums[cur_id];
         }
     }
 }
