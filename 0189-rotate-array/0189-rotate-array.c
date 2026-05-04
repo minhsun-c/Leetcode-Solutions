@@ -1,23 +1,20 @@
+static inline void swap(int *a, int *b) {
+    *a ^= *b; // a = a ^ b
+    *b ^= *a; // b = b ^ (a ^ b)
+    *a ^= *b; // a = (a ^ b) ^ a
+}
+
+void reverse(int *nums, int size) {
+    int mid = size / 2;
+    for (int i=0; i<mid; i++) 
+        swap(&nums[i], &nums[size - 1 - i]);
+}
+
 void rotate(int* nums, int numsSize, int k) {
     k = k % numsSize;
     if (!k) return;
 
-    int cnt = 0;
-    int start = 0;
-    int cur_id = 0, nx_id;
-    int prev = nums[0], next;
-    while (cnt < numsSize) {
-        nx_id = (cur_id + k) % numsSize;
-        next = nums[nx_id];
-        nums[nx_id] = prev;
-        prev = next;
-        cur_id = nx_id;
-        cnt ++;
-        
-        if (cur_id == start) {
-            start ++;
-            cur_id = start;
-            prev = nums[cur_id];
-        }
-    }
+    reverse(nums, numsSize);
+    reverse(nums, k);
+    reverse(nums + k, numsSize - k);
 }
