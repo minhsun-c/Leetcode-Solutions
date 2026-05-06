@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0443-string-compression](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [0908-middle-of-the-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0908-middle-of-the-linked-list) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
+| [1861-rotating-the-box](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1861-rotating-the-box) |
 | [1894-merge-strings-alternately](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1894-merge-strings-alternately) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
@@ -196,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1833-find-the-highest-altitude) |
+| [1861-rotating-the-box](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1861-rotating-the-box) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2048-build-array-from-permutation](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2048-build-array-from-permutation) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
@@ -538,6 +540,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
 | [1036-rotting-oranges](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1036-rotting-oranges) |
+| [1861-rotating-the-box](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1861-rotating-the-box) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
