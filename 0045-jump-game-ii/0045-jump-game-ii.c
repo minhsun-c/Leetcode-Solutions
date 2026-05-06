@@ -1,20 +1,15 @@
-static inline int min(int a, int b) {
-    return a < b ? a : b;
-}
-
 int jump(int* nums, int numsSize) {
-    int dp[numsSize];
-    for (int i=0; i<numsSize; i++) 
-        dp[i] = INT_MAX;
-    dp[0] = 0;
+    int cur_end = 0;
+    int farthest = 0;
+    int jump = 0;
+    for (int i=0; i<numsSize-1; i++) {
+        if (i + nums[i] > farthest)
+            farthest = i + nums[i];
 
-    for (int i=1; i<numsSize; i++) {
-        for (int j=0; j<i; j++) {
-            if (nums[j] + j >= i && dp[j] < dp[i] - 1) {
-                dp[i] = dp[j] + 1;
-            }
+        if (i == cur_end){
+            jump ++; 
+            cur_end = farthest;
         }
     }
-
-    return dp[numsSize-1];
+    return jump;
 }
