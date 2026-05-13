@@ -168,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0240-search-a-2d-matrix-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0274-h-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0274-h-index) |
 | [0284-peeking-iterator](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0284-peeking-iterator) |
 | [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
@@ -365,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0274-h-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0274-h-index) |
 | [0414-third-maximum-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -648,4 +650,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0284-peeking-iterator](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0284-peeking-iterator) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
