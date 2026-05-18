@@ -1,7 +1,13 @@
 int lengthOfLastWord(char* s) {
-    int ptr1 = strlen(s) - 1, ptr2;
-    while (ptr1 >= 0 && isspace(s[ptr1])) ptr1 --;
-    ptr2 = ptr1;
-    while (ptr2 >= 0 && !isspace(s[ptr2])) ptr2 --;
-    return ptr1 - ptr2;
+    int sl = strlen(s) - 1;
+    while (sl >= 0 && s[sl] == ' ') {
+        s[sl] = 0;
+        sl --;
+    }
+    int ans = 0;
+    while (sl >= 0 && s[sl] != ' ') {
+        ans ++;
+        sl --;
+    }
+    return ans;
 }
