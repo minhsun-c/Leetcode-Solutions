@@ -1,18 +1,32 @@
 char* convert(char* s, int numRows) {
-    int len = strlen(s);
-    char buf[len+1];
-    strcpy(buf, s);
-    int idx = 0;
-    int offset = numRows * 2 - (numRows >= 1) - (numRows >= 2);
-    int round = len / offset + (len % offset != 0);
-    for (int i=0; i<=offset/2 && idx < len; i++) {
-        for (int j=0; j<round && j * offset + i < len; j++) {
-            s[idx++] = buf[j * offset + i];
-            int side = j * offset + (offset - i);
-            if (i && offset - i != i && side < len) {
-                s[idx++] = buf[side];
-            }
-        }
+    int sl = strlen(s);
+
+    if (numRows == 1 || sl < numRows) 
+        return s;
+
+    char arr[numRows][sl];
+    int idxs[numRows];
+    memset(idxs, 0, sizeof(idxs));
+
+    int dir = 1, row = 0;
+    for (int i=0; i<sl; i++) {
+        arr[row][idxs[row]] = s[i];
+        idxs[row] ++;
+
+        if (dir == 1 && row == numRows - 1) dir = -1;
+        if (dir == -1 && row == 0) dir = 1;
+
+        row += dir;
     }
-    return s;
+
+    char *ans = malloc(sl + 1);
+    ans[0] = 0;
+
+    for (int i=0; i<numRows; i++) {
+        arr[i][idxs[i]] = 0;
+        strcat(ans, arr[i]);
+    }
+    ans[sl] = 0;
+
+    return ans;
 }
