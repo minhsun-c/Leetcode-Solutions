@@ -21,10 +21,12 @@ char* convert(char* s, int numRows) {
 
     char *ans = malloc(sl + 1);
     ans[0] = 0;
+    int len = 0;
 
     for (int i=0; i<numRows; i++) {
         arr[i][idxs[i]] = 0;
-        strcat(ans, arr[i]);
+        memcpy(ans + len, arr[i], idxs[i]);
+        len += idxs[i];
     }
     ans[sl] = 0;
 
