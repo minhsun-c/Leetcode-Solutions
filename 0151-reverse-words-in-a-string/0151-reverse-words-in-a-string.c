@@ -1,41 +1,24 @@
-char *trim(char *s) {
-    while (*s && isspace(*s))
-        s++;
-    if (*s == 0) return NULL;
-    int j = strlen(s) - 1;
-    while (s[j] && isspace(s[j])) {
-        s[j] = 0;
-        j --;
-    }
-    return s;
-}
-
-char *rspace(char *s) {
-    int size = strlen(s) - 1;
-    while (size && !isspace(s[size])) size --;
-    if (size == 0) return NULL;
-    return s + size + 1;
-}
-
 char* reverseWords(char* s) {
-    char *str = (char *)malloc(strlen(s) + 1);
-    char sp[] = " ";
-    *str = 0;
-    int cnt = 0;
-    while (1) {
-        s = trim(s);
-        char *bk = rspace(s);
-        if (bk == NULL) {
-            if (cnt++)
-                strcat(str, sp);
-            strcat(str, s);
-            break;
+    int sl = strlen(s);
+    char *ans = malloc(sl + 1);
+    ans[0] = 0;
+
+    int cur_len = 0;
+    for (int i=sl-1; i>=0; i--) {
+        if (s[i] == ' ') {
+            if (cur_len > 0) {
+                strcat(ans, &s[i+1]);
+                strcat(ans, " ");
+                cur_len = 0;
+            }
+            s[i] = 0;
         } else {
-            if (cnt++)
-                strcat(str, sp);
-            strcat(str, bk);
-            *(bk - 1) = 0;
+            cur_len ++;
         }
     }
-    return str;
+
+    if (cur_len > 0) strcat(ans, &s[0]);
+    char *last = &ans[strlen(ans) - 1];
+    if (*last == ' ') *last = 0;
+    return ans;
 }
