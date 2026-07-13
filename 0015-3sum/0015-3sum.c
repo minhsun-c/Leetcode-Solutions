@@ -16,6 +16,7 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
     int i=0, j, k, sum;
     int previ = INT_MIN;
     for (i=0; i<numsSize-2; i++) {
+        if (nums[i] > 0) break;
         if (previ == nums[i]) continue;
         previ = nums[i];
         j = i+1;
