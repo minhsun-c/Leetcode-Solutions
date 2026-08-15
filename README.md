@@ -216,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
+| [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 ## Hash Table
 |  |
 | ------- |
@@ -568,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3676-smallest-number-with-all-set-bits) |
+| [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 ## Simulation
 |  |
 | ------- |
