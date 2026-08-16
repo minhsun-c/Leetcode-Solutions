@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0345-reverse-vowels-of-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
+| [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0392-is-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0443-string-compression) |
 | [0908-middle-of-the-linked-list](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0908-middle-of-the-linked-list) |
@@ -179,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0303-range-sum-query-immutable) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
+| [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0414-third-maximum-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -235,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [1319-unique-number-of-occurrences](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1635-number-of-good-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1635-number-of-good-pairs) |
@@ -374,6 +377,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0274-h-index) |
+| [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0414-third-maximum-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -460,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0300-longest-increasing-subsequence) |
+| [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0374-guess-number-higher-or-lower](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0450-delete-node-in-a-bst](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0450-delete-node-in-a-bst) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0501-find-mode-in-binary-search-tree) |
