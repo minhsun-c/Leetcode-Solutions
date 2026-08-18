@@ -224,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3898-find-the-degree-of-each-vertex](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3898-find-the-degree-of-each-vertex) |
 ## Hash Table
 |  |
 | ------- |
@@ -570,6 +571,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1861-rotating-the-box](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1861-rotating-the-box) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2428-equal-row-and-column-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2428-equal-row-and-column-pairs) |
+| [3898-find-the-degree-of-each-vertex](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3898-find-the-degree-of-each-vertex) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -678,4 +680,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0274-h-index](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0274-h-index) |
+## Graph Theory
+|  |
+| ------- |
+| [3898-find-the-degree-of-each-vertex](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3898-find-the-degree-of-each-vertex) |
 <!---LeetCode Topics End-->
