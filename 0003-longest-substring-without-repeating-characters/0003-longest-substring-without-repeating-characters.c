@@ -11,15 +11,12 @@ int lengthOfLongestSubstring(char* s) {
     int head = 0;
     idx[s[0]] = 0;
     for (int i=1; i<sl; i++) {
-        if (idx[s[i]] == -1) {
+        if (idx[s[i]] < head) {
             idx[s[i]] = i;
             cnt ++;
         } else {
             max = cnt > max ? cnt : max;
-            int prev = idx[s[i]];
-            for (int j=head; j<=idx[s[i]]; j++) 
-                idx[s[j]] = -1;
-            head = prev + 1;
+            head = idx[s[i]] + 1;
             idx[s[i]] = i;
             cnt = i - head + 1;
         }
