@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0289-game-of-life](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0289-game-of-life) |
 | [0300-longest-increasing-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0303-range-sum-query-immutable) |
+| [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
 | [0334-increasing-triplet-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0334-increasing-triplet-subsequence) |
 | [0349-intersection-of-two-arrays](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -322,6 +323,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0139-word-break) |
 | [0198-house-robber](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0300-longest-increasing-subsequence) |
+| [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
 | [0338-counting-bits](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0435-non-overlapping-intervals) |
@@ -512,6 +514,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0112-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0200-number-of-islands) |
+| [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0871-keys-and-rooms) |
@@ -727,4 +730,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0139-word-break](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0139-word-break) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
