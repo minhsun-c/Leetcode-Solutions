@@ -13,7 +13,7 @@ int coinChange(int* coins, int coinsSize, int amount) {
         for (int j=0; j<coinsSize; j++) {
             int c = coins[j];
             if (i >= c && dp[i - c] + 1 < dp[i]) 
-                dp[i] = min(dp[i], dp[i - c] + 1);
+                dp[i] = dp[i - c] + 1;
         }
     }
     return dp[amount] == MY_MAX ? -1 : dp[amount];
