@@ -5,7 +5,7 @@
  */
 struct item {
     int cnt[26];
-    char str[101];
+    int idx;
 };
 
 
@@ -17,7 +17,7 @@ int cmp(const void *a, const void *b) {
 
 void build_arr(char **strs, int size, struct item *arr) {
     for (int i=0; i<size; i++) {
-        strcpy(arr[i].str, strs[i]);
+        arr[i].idx = i;
         memset(arr[i].cnt, 0, sizeof(arr[i].cnt));
         for (char *c = strs[i]; *c; c ++) {
             arr[i].cnt[(*c) - 'a'] ++;
@@ -49,7 +49,6 @@ char*** groupAnagrams(char** strs, int strsSize, int* returnSize, int** returnCo
     int prev[26];
     memset(prev, -1, sizeof(prev));
     for (int i=0; i<strsSize; i++) {
-        // printf("gid: %d, str: [%s], id: %d\n", gid, arr[i].str, i);
         if (memcmp(prev, arr[i].cnt, sizeof(prev)) != 0) {
             gid ++;
             (*returnColumnSizes)[gid] = 1;
@@ -57,7 +56,7 @@ char*** groupAnagrams(char** strs, int strsSize, int* returnSize, int** returnCo
         } else {
             (*returnColumnSizes)[gid] ++; 
         }
-        insert(ans, gid, (*returnColumnSizes)[gid]-1, arr[i].str, strsSize);
+        insert(ans, gid, (*returnColumnSizes)[gid]-1, strs[arr[i].idx], strsSize);
     }
 
     // result
