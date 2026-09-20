@@ -30,8 +30,7 @@ void insert(char ***ans, int gid, int id, char *str, int size) {
         ans[gid] = malloc(size * sizeof(char *));
     } 
     int sl = strlen(str);
-    ans[gid][id] = malloc(sl + 1);
-    strcpy(ans[gid][id], str);
+    ans[gid][id] = str;
 } 
 
 char*** groupAnagrams(char** strs, int strsSize, int* returnSize, int** returnColumnSizes) {
