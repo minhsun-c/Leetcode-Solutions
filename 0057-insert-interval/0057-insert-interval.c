@@ -3,74 +3,56 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int slot_cmp(int *list, int *ins) {
-    if (list[0] != ins[0]) 
-        return list[0] - ins[0];
-    return list[1] - ins[1];
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+
+int max(int a, int b) {
+    return a > b ? a : b;
 }
 
 int** insert(int** intervals, int intervalsSize, int* intervalsColSize, int* newInterval, int newIntervalSize, int* returnSize, int** returnColumnSizes) {
-    // find the spot : after intervals[mid_id]
-    int mid_id = -1;
-    for (int i=0; i<intervalsSize; i++) {
-        int cmp_rst = slot_cmp(intervals[i], newInterval);
-        if (cmp_rst < 0) 
-            mid_id ++;
-        else
-            break;
-    }
-    printf("mid: %d\n", mid_id);
-
-    // check <--  
-    int l_min = mid_id;
-    for (int i=mid_id; i>=0; i--) {
-        printf("left: [%d, %d]\n", intervals[i][0], intervals[i][1]);
-        if (newInterval[0] <= intervals[i][0]) {
-            l_min --;
-        } else if (intervals[i][0] <= newInterval[0] && newInterval[0] <= intervals[i][1]) {
-            newInterval[0] = intervals[i][0];
-            l_min --;
-        } else
-            break;
-    }
-
-    // check -->
-    int start = mid_id < 0 ? 0 : mid_id;     
-    int r_max = start;                         
-    for (int i = start; i < intervalsSize; i++) {
-        if (newInterval[1] >= intervals[i][1]) {
-            r_max ++;
-        } else if (intervals[i][0] <= newInterval[1] && newInterval[1] <= intervals[i][1]) {
-            newInterval[1] = intervals[i][1];
-            r_max ++;
-        } else
-            break;
-    }
-
-    printf("l_min: %d, r_max: %d\n", l_min, r_max);
-
-    printf("[0] = %d\n", newInterval[0]);
-    printf("[1] = %d\n", newInterval[1]);
-
-    // merge 0 .. l_min | inserted | r_max .. (size-1)
+    // malloc
     int **ans = malloc(sizeof(int *) * (intervalsSize + 1));
-    int id = 0;
-    *returnColumnSizes = malloc(sizeof(int) * (intervalsSize + 1));
-    for (int i=0; i<=l_min; i++) {
-        ans[id] = intervals[i];
-        (*returnColumnSizes)[id] = 2;
-        id ++;
-    }
-    ans[id] = newInterval;
-    (*returnColumnSizes)[id] = 2;
-    id ++;
-    for (int i=r_max; i >= 0 && i<intervalsSize; i++) {
-        ans[id] = intervals[i];
-        (*returnColumnSizes)[id] = 2;
-        id ++;
+    int *col = malloc(sizeof(int) * (intervalsSize + 1));
+
+    // counter
+    int i = 0;
+    int used = 0;
+    int lo = newInterval[0];
+    int hi = newInterval[1];
+
+    // left
+    while (i < intervalsSize && intervals[i][1] < lo) {
+        ans[used] = intervals[i];
+        col[used] = 2;
+        i ++;
+        used ++;
     }
 
-    // return
-    *returnSize = id;
+    // merged
+    while (i < intervalsSize && intervals[i][0] <= hi) {
+        lo = min(intervals[i][0], lo);
+        hi = max(intervals[i][1], hi);
+        i ++;
+    }
+    int *merged = malloc(sizeof(int) * 2);
+    merged[0] = lo;
+    merged[1] = hi;
+    ans[used] = merged;
+    col[used] = 2;
+    used ++;
+
+    // right
+    while (i < intervalsSize) {
+        ans[used] = intervals[i];
+        col[used] = 2;
+        i ++;
+        used ++;
+    }
+
+    // return 
+    *returnSize = used;
+    *returnColumnSizes = col;
     return ans;
 }
