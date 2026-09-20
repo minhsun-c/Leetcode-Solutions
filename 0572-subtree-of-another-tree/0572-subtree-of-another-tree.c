@@ -18,6 +18,7 @@ bool isSameTree(struct TreeNode *r1, struct TreeNode *r2) {
 bool isSubtree(struct TreeNode* root, struct TreeNode* subRoot) {
     if (!root)
         return false;
-    return isSameTree(root, subRoot) || isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
-    
+    if (root->val == subRoot->val && isSameTree(root, subRoot)) 
+        return true;
+    return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
 }
