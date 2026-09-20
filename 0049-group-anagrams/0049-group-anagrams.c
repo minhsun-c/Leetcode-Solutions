@@ -4,15 +4,15 @@
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
 struct item {
-    int cnt[26];
+    unsigned char cnt[26];
     int idx;
 };
 
 
 int cmp(const void *a, const void *b) {
-    int *_a = ((struct item *) a) -> cnt;
-    int *_b = ((struct item *) b) -> cnt;
-    return memcmp(_a, _b, sizeof(int) * 26);
+    unsigned char *_a = ((struct item *) a) -> cnt;
+    unsigned char *_b = ((struct item *) b) -> cnt;
+    return memcmp(_a, _b, sizeof(unsigned char) * 26);
 }
 
 void build_arr(char **strs, int size, struct item *arr) {
@@ -45,7 +45,7 @@ char*** groupAnagrams(char** strs, int strsSize, int* returnSize, int** returnCo
     memset(*returnColumnSizes, 0, sizeof(int) * strsSize);
 
     // iter
-    int prev[26];
+    unsigned char prev[26];
     memset(prev, -1, sizeof(prev));
     for (int i=0; i<strsSize; i++) {
         if (memcmp(prev, arr[i].cnt, sizeof(prev)) != 0) {
