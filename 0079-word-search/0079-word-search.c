@@ -10,9 +10,23 @@ bool dfs(char **map, int x, int y, int row, int col, char *str) {
     return rst;
 }
 
+bool precheck(char **board, int row, int col, char *word) {
+    unsigned char get[64], need[64];
+    memset(get, 0, sizeof(get));
+    memset(need, 0, sizeof(need));
+    for (int i=0; i<row; i++) 
+        for (int j=0; j<col; j++)
+            get[board[i][j] - 'A'] ++;
+    for (char *c = word; *c; c++) 
+        need[*c - 'A'] ++;
+    return memcmp(get, need, sizeof(get));
+}
+
 bool exist(char** board, int boardSize, int* boardColSize, char* word) {
     int row = boardSize;
     int col = boardColSize[0];
+    if (precheck(board, row, col, word) < 0)
+        return false;
     for (int i=0; i<row; i++) {
         for (int j=0; j<col; j++) {
             if (dfs(board, i, j, row, col, word))
