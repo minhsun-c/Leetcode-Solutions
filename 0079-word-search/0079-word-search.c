@@ -19,13 +19,16 @@ bool precheck(char **board, int row, int col, char *word) {
             get[board[i][j] - 'A'] ++;
     for (char *c = word; *c; c++) 
         need[*c - 'A'] ++;
-    return memcmp(get, need, sizeof(get));
+    for (int i = 0; i < 64; i++)
+        if (need[i] > get[i])
+            return false;          
+    return true;      
 }
 
 bool exist(char** board, int boardSize, int* boardColSize, char* word) {
     int row = boardSize;
     int col = boardColSize[0];
-    if (precheck(board, row, col, word) < 0)
+    if (!precheck(board, row, col, word))
         return false;
     for (int i=0; i<row; i++) {
         for (int j=0; j<col; j++) {
