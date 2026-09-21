@@ -1,13 +1,11 @@
 bool dfs(char **map, int x, int y, int row, int col, char *str) {
     if (*str == '\0')
         return true;
-    if (x < 0 || x >= row || y < 0 || y >= col || map[x][y] == '\0') 
+    if (x < 0 || x >= row || y < 0 || y >= col || map[x][y] == '\0' || map[x][y] != *str) 
         return false;
-    bool rst = false;
     char cur = map[x][y];
     map[x][y] = '\0';
-    if (cur == *str) 
-        rst = dfs(map, x+1, y, row, col, str+1) || dfs(map, x-1, y, row, col, str+1) || dfs(map, x, y+1, row, col, str+1) || dfs(map, x, y-1, row, col, str+1);
+    bool rst = dfs(map, x+1, y, row, col, str+1) || dfs(map, x-1, y, row, col, str+1) || dfs(map, x, y+1, row, col, str+1) || dfs(map, x, y-1, row, col, str+1);
     map[x][y] = cur;
     return rst;
 }
