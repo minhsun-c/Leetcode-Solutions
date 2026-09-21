@@ -11,16 +11,13 @@ bool valid(char c1, char c2) {
 
 int numDecodings(char* s) {
     int sl = (int) strlen(s);
-    int dp[sl]; // dp[i] -> s[0 .. i] 's number of decoding
+    int dp[sl + 1]; // dp[i+1] -> s[0 .. i] 's number of decoding
     memset(dp, 0, sizeof(dp));
-    dp[0] = valid(s[0], '\0');
-    if (dp[0] == 0)
-        return false;
-    if (sl >= 2)
-        dp[1] = valid(s[0], s[1]) + valid(s[1], '\0');
-    for (int i=2; i<sl; i++) {
-        dp[i] += valid(s[i], '\0') * dp[i-1];
-        dp[i] += valid(s[i-1], s[i]) * dp[i-2];
+    dp[0] = 1;
+    dp[1] = valid(s[0], '\0');
+    for (int i=2; i<=sl; i++) {
+        dp[i] += valid(s[i-1],   '\0') * dp[i-1];
+        dp[i] += valid(s[i-2], s[i-1]) * dp[i-2];
     }
-    return dp[sl-1];
+    return dp[sl];
 }
