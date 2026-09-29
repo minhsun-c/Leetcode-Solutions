@@ -236,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2048-build-array-from-permutation](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2048-build-array-from-permutation) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2428-equal-row-and-column-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2428-equal-row-and-column-pairs) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2553-total-cost-to-hire-k-workers) |
@@ -363,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1700-minimum-time-to-make-rope-colorful) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Trie
 |  |
@@ -661,6 +663,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1036-rotting-oranges](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1036-rotting-oranges) |
 | [1861-rotating-the-box](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1861-rotating-the-box) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2428-equal-row-and-column-pairs](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2428-equal-row-and-column-pairs) |
 | [3898-find-the-degree-of-each-vertex](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3898-find-the-degree-of-each-vertex) |
 ## Bit Manipulation
@@ -828,4 +831,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 <!---LeetCode Topics End-->
