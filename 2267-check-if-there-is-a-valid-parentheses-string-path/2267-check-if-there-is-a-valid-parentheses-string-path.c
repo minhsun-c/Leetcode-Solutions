@@ -1,6 +1,3 @@
-bool dp[100][100][100];
-// dp[i][j][k] -> k means the stack depth
-
 int min(int a, int b) {
     return a < b ? a : b;
 }
@@ -12,6 +9,7 @@ bool hasValidPath(char** grid, int gridSize, int* gridColSize) {
     if ((row + col - 1) % 2 != 0 || grid[0][0] == ')' || grid[row-1][col-1] == '(') 
         return false;
 
+    bool dp[row][col][100]; // dp[i][j][k] -> k means the stack depth
     memset(dp, 0, sizeof(dp));
     dp[0][0][1] = 1;
 
