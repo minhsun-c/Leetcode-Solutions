@@ -1,6 +1,10 @@
 bool dp[100][100][100];
 // dp[i][j][k] -> k means the stack depth
 
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+
 bool hasValidPath(char** grid, int gridSize, int* gridColSize) {
     int row = gridSize;
     int col = gridColSize[0];
@@ -14,9 +18,9 @@ bool hasValidPath(char** grid, int gridSize, int* gridColSize) {
     for (int i=0; i<row; i++) {
         for (int j=0; j<col; j++) {
             if (i == 0 && j == 0) continue;
-            int walk = i + j - 1;
             int step = grid[i][j] == '(' ? 1 : -1;
-            for (int k=0; k<100; k++) {
+            int kmax = min(i + j + 1 /* walk */, (row - 1 - i) + (col - 1 - j) /* remain */);
+            for (int k=0; k<=kmax; k++) {
                 if (0 > k - step || k - step >= 100)
                     continue;
                 if ((i > 0 && dp[i-1][j][k-step]) || (j > 0 && dp[i][j-1][k-step])) 
