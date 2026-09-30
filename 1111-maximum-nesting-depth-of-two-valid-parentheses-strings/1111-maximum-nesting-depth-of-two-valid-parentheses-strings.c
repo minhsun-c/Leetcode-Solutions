@@ -9,11 +9,11 @@ int* maxDepthAfterSplit(char* seq, int* returnSize) {
     int d = 0;
     for (int i=0; i<(int)sl; i++) {
         if (seq[i] == '(') {
-            arr[i] = d & 1;
             d ++;
-        } else {
-            d --;
             arr[i] = d & 1;
+        } else {
+            arr[i] = d & 1;
+            d --;
         }
     }
 
