@@ -1,25 +1,36 @@
 bool isValid(char* s) {
-    int idx = 0;
-    int top = -1;
-    for (; s[idx]; idx ++) {
-        switch (s[idx]) {
-            case ')':
-                if (top == -1 || s[top] != '(') return false;
-                else top --;
-                break;
-            case ']':
-                if (top == -1 || s[top] != '[') return false;
-                else top --;
-                break;
-            case '}':
-                if (top == -1 || s[top] != '{') return false;
-                else top --;
-                break;
-            default:
-                s[++top] = s[idx];
-                break;
+    int sl = strlen(s);
+    char stack[sl];
+    int top = 0;
+    for (char *c = s; *c; c ++) {
+        switch (*c) {
+        case '(': 
+            stack[top] = *c;
+            top ++;
+            break;
+        case ')':
+            top --;
+            if (top < 0 || stack[top] == '[' || stack[top] == '{') return false;
+            break;
+        case '[':
+            stack[top] = *c;
+            top ++;
+            break;
+        case ']':
+            top --;
+            if (top < 0 || stack[top] == '(' || stack[top] == '{') return false;
+            break;
+        case '{':
+            stack[top] = *c;
+            top ++;
+            break;
+        case '}':
+            top --;
+            if (top < 0 || stack[top] == '[' || stack[top] == '(') return false;
+            break;
         }
+        if (top < 0)
+            return false;
     }
-    if (top != -1) return false;
-    return true;
+    return top == 0;
 }
