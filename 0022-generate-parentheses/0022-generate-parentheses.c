@@ -1,39 +1,37 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-#define MAXLEN(n) (1 << (2 * n))
-char **arr;
-int len;
+#define CATALAN_8 1430
 
-void push_arr(char *str) {
-    int slen = strlen(str);
-    arr[len] = (char *)malloc(1 + slen);
-    strncpy(arr[len], str, slen + 1);
-    len ++;
-}
+char **res;
+int size;
+char buf[17];
 
-void rec(int n, int left, int right, char *str) {
-    if (str == NULL)
-        str = (char *)malloc(sizeof(char) * (2 * n + 1));
-    if (left == right && left + right == 2 * n){
-        str[left + right] = 0;
-        push_arr(str);
+void gen(int n, int pos, int open, int close) {
+    if (pos == 2 * n) {
+        buf[pos] = 0;
+        res[size] = malloc(sizeof(char) * (pos + 1));
+        memcpy(res[size], buf, pos + 1);
+        size ++;
         return;
     }
-    if (left < n) {
-        str[left + right] = '(';
-        rec(n, left + 1, right, str);
-    } 
-    if (right < left) {
-        str[left + right] = ')';
-        rec(n, left, right + 1, str);
+
+    if (open < n) {
+        buf[pos] = '(';
+        gen(n, pos + 1, open + 1, close);
+    }
+    if (close < open) {
+        buf[pos] = ')';
+        gen(n, pos + 1, open, close + 1);
     }
 }
 
 char** generateParenthesis(int n, int* returnSize) {
-    arr = (char **) malloc(sizeof(char *) * MAXLEN(n));
-    len = 0;
-    rec(n, 0, 0, NULL);
-    *returnSize = len;
-    return arr;
+    res = malloc(sizeof(char *) * CATALAN_8);
+    size = 0;
+
+    gen(n, 0, 0, 0);
+
+    *returnSize = size;
+    return res;
 }
