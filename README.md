@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0151-reverse-words-in-a-string) |
 | [0208-implement-trie-prefix-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0242-valid-anagram) |
+| [0301-remove-invalid-parentheses](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0301-remove-invalid-parentheses) |
 | [0345-reverse-vowels-of-a-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0394-decode-string) |
@@ -588,6 +589,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0301-remove-invalid-parentheses) |
 | [0322-coin-change](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0547-number-of-provinces) |
@@ -657,6 +659,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0079-word-search) |
 | [0089-gray-code](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0089-gray-code) |
 | [0216-combination-sum-iii](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0216-combination-sum-iii) |
+| [0301-remove-invalid-parentheses](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/0301-remove-invalid-parentheses) |
 ## Matrix
 |  |
 | ------- |
