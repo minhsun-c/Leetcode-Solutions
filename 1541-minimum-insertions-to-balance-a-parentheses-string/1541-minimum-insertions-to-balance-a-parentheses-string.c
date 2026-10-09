@@ -3,7 +3,7 @@ int minInsertions(char* s) {
     int top = 0;
     for (int i=0; s[i]; i++) {
         if (s[i] == '(') {
-            if (top % 2 == 1) { // require one ')'
+            if (top & 1) { // require one ')'
                 top --;
                 cnt ++;
             }
