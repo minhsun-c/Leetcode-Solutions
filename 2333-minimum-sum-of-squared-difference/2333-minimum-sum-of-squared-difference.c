@@ -28,8 +28,8 @@ long long minSumSquareDiff(int* nums1, int nums1Size, int* nums2, int nums2Size,
     }
 
     long long ans = 0;
-    for (long long i=1; i<=max_id; i++) {
-        ans += i*i * (long long) diff[i];
+    for (int i=1; i<=max_id; i++) {
+        ans += (long long) diff[i] * i * i;
     }
 
     return ans;
