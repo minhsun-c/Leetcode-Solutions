@@ -260,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [3898-find-the-degree-of-each-vertex](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3898-find-the-degree-of-each-vertex) |
 ## Hash Table
 |  |
@@ -474,6 +475,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2636-maximum-subsequence-score](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2636-maximum-subsequence-score) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3727-maximum-alternating-sum-of-squares) |
 ## Tree
 |  |
 | ------- |
@@ -748,6 +750,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2636-maximum-subsequence-score](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2636-maximum-subsequence-score) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/minhsun-c/Leetcode-Solutions/tree/master/3727-maximum-alternating-sum-of-squares) |
 ## Graph
 |  |
 | ------- |
