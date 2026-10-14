@@ -1,17 +1,23 @@
 char* maxSumOfSquares(int num, int sum) {
     char *ans = malloc(num + 1);
-    for (int i=0; i<num; i++) {
-        if (sum >= 9) {
-            ans[i] = '9';
-            sum -= 9;
-        } else {
-            ans[i] = sum + '0';
-            sum = 0;
-        }
-    }
-    if (sum != 0)
+    if (num * 9 < sum) {
         ans[0] = 0;
-    else
-        ans[num] = 0;
+        return ans;
+    }
+    int cnt9 = sum / 9;
+    int left = sum % 9;
+
+    int i;
+    for (i=0; i<cnt9; i++) {
+        ans[i] = '9';
+    }
+    if (i < num) {
+        ans[i] = left + '0';
+        i ++;
+    }
+    for (; i<num; i++) {
+        ans[i] = '0';
+    }
+    ans[num] = 0;
     return ans;
 }
